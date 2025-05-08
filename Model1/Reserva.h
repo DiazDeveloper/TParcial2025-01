@@ -21,7 +21,6 @@ struct NodoReserva
 
 void crearReserva(NodoReserva*& reservas);
 void reporteReservas(NodoReserva* reservas);
-void anularReserva(NodoReserva*& reservas);
-void ordenarReservas(NodoReserva* reservas);
+void anularReserva(NodoReserva*& reservas);;
 
 #endif

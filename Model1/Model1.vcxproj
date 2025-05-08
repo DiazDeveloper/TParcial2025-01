@@ -130,14 +130,12 @@
     <ClCompile Include="Comentarios.cpp" />
     <ClCompile Include="Controlador.cpp" />
     <ClCompile Include="Model1.cpp" />
-    <ClCompile Include="Pedido.cpp" />
     <ClCompile Include="Reserva.cpp" />
     <ClCompile Include="Usuario.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Comentarios.h" />
     <ClInclude Include="Controlador.h" />
-    <ClInclude Include="Pedido.h" />
     <ClInclude Include="Reserva.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Usuario.h" />

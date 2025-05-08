@@ -1,5 +1,5 @@
 #pragma once
-#include "Pedido.h"
+
 #include "Reserva.h"
 #include "Comentarios.h"
 #include "Usuario.h"

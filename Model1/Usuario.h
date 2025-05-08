@@ -23,5 +23,7 @@ struct NodoUsuario
 };
 void registrarUsuarios(queue<Usuario>& usuarios); 
 void eliminarUsuario(queue<Usuario>& usuarios); 
+void mostrarUsuarios(queue<Usuario>& usuarios);
+void ordenarUsuarios(queue<Usuario>& usuarios);
 
 #endif

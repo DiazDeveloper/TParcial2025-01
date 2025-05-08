@@ -61,31 +61,25 @@ void crearComentario(NodoComentarios*& comentarios)
     cout << "Comentario agregado exitosamente: " << textoComentario << endl;
 }
 
+
 void mostrarComentarios(NodoComentarios* comentarios)
 {
-
-    if (comentarios == nullptr) 
-    {
+    if (comentarios == nullptr) {
         cout << "No hay comentarios." << endl;
         return;
     }
 
-    NodoComentarios* temp = comentarios; 
-    cout << "Comentarios actuales:" << endl; 
+    // Mostrar el comentario actual
+    cout << "ID Comentario: " << comentarios->comentario.idComenatario << endl;
+    cout << "ID Usuario: " << comentarios->comentario.idUsuario << endl;
+    cout << "ID Pedido: " << comentarios->comentario.idPedido << endl;
+    cout << "Texto: " << comentarios->comentario.texto << endl;
+    cout << " --------------------------- " << endl;
 
-    // Recorremos la lista de comentarios
-    while (temp != nullptr) {
-        cout << "ID Comentario: " << temp->comentario.idComenatario << endl;
-        cout << "ID Usuario: " << temp->comentario.idUsuario << endl;
-        cout << "ID Pedido: " << temp->comentario.idPedido << endl;
-        cout << "Texto: " << temp->comentario.texto << endl; 
-        cout << "--------------------------" << endl; 
-
-        // Avanzar al siguiente nodo
-        temp = temp->siguiente;
-    }
-
+    // Llamada recursiva para el siguiente comentario
+    mostrarComentarios(comentarios->siguiente);
 }
+
 
 void eliminarComentario(NodoComentarios*& comentarios)
 {

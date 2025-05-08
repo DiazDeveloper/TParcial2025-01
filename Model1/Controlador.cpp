@@ -11,56 +11,76 @@ void Controlador::mostrarMenu()
     cout << "6. Eliminar un comentario" << endl;
     cout << "7. Crear un usuario" << endl;
     cout << "8. Eliminar un usuario" << endl;
+    cout << "9. Mostrar usuarios" << endl; 
     cout << "0. Salir" << endl;
     cout << "Seleccione una opcion: ";
 }
 
+void pausarPantalla() { 
+    cout << "\nPresione ENTER para continuar...";
+    cin.get();
+}
 void Controlador::IniciarProyecto()
 {
-	int opcion;
-	NodoPedido* nodoP = nullptr;
-    NodoReserva* nodoR = nullptr;
-    NodoComentarios* nodoC = nullptr; 
-    queue<Usuario> usuarios; 
+    int opcion;
 
-	do
-	{
-		system("cls");
-		mostrarMenu();
-		cin >> opcion;
-		cin.ignore();
+    NodoReserva* nodoR = nullptr;
+    NodoComentarios* nodoC = nullptr;
+    queue<Usuario> usuarios;
+
+    do
+    {
+        system("cls");
+        mostrarMenu();
+        cin >> opcion;
+        cin.ignore();
+
         switch (opcion)
         {
         case 1:
             crearReserva(nodoR);
+            pausarPantalla(); 
             break;
         case 2:
-            anularReserva(nodoR); 
+            anularReserva(nodoR);
+            pausarPantalla(); 
             break;
         case 3:
-            reporteReservas(nodoR); 
+            reporteReservas(nodoR);
+            pausarPantalla(); 
             break;
         case 4:
-            crearComentario(nodoC);  
+            crearComentario(nodoC);
+            pausarPantalla();  
             break;
         case 5:
-            mostrarComentarios(nodoC); 
+            mostrarComentarios(nodoC);
+            pausarPantalla(); 
             break;
         case 6:
-            eliminarComentario(nodoC);  
+            eliminarComentario(nodoC);
+            pausarPantalla();
             break;
         case 7:
-            registrarUsuarios(usuarios); 
+            registrarUsuarios(usuarios);
+            pausarPantalla();  
             break;
         case 8:
-            eliminarUsuario(usuarios);  
+            eliminarUsuario(usuarios);
+            pausarPantalla(); 
+            break;
+        case 9:
+            mostrarUsuarios(usuarios);
+            pausarPantalla();  
             break;
         case 0:
             cout << "Saliendo del programa." << endl;
             break;
         default:
             cout << "Opción no válida." << endl;
+            pausarPantalla();  
+            break;
         }
 
-	} while (opcion != 0);
+    } while (opcion != 0);
 }

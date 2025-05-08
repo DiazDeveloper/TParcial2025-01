@@ -1,0 +1,10 @@
+DATOS DE LA RESERVA:
+ID Reserva: 321432
+ID Cliente: 4324324
+Fecha: 344324
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 423423
+ID Cliente: 131243
+Fecha: 32423
+----------------------------
