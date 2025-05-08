@@ -1,0 +1,12 @@
+DATOS DEL PEDIDO:
+ID Pedido: 3214324
+ID Usuario: 4325342
+Precio: 32423
+Fecha: 4334
+----------------------------
+DATOS DEL PEDIDO:
+ID Pedido: 1
+ID Usuario: 1
+Precio: 1
+Fecha: 1
+----------------------------
