@@ -12,7 +12,6 @@ public:
 
 	int idComenatario;
 	int idUsuario;
-	int idPedido;
 	string texto;
 
 };

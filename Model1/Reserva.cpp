@@ -5,7 +5,7 @@
 using namespace std;
 void crearReserva(NodoReserva*& reservas)
 {
-    int idReserva, idCliente;
+    int idReserva, idCliente; 
     string fechaReserva;
 
     cout << "Ingrese el ID de la reserva: ";
@@ -25,7 +25,6 @@ void crearReserva(NodoReserva*& reservas)
 
     nuevaReserva->siguiente = reservas;
 
-
     reservas = nuevaReserva;
 
     // Exportamos la info al archivo de texto
@@ -44,6 +43,9 @@ void crearReserva(NodoReserva*& reservas)
     }
 
     cout << "Reserva con ID " << idReserva << " registrada exitosamente." << endl;
+    cin.get();   // get e ignore para que no se cierre automaticamente
+    cin.ignore();
+
 }
 
 
@@ -76,7 +78,7 @@ void anularReserva(NodoReserva*& reservas)
 {
     if (reservas == nullptr)
     {
-        cout << endl << "La lista de reservas est� vac�a." << endl;
+        cout << endl << "No hay reservas" << endl;
         return;
     }
 
@@ -84,7 +86,7 @@ void anularReserva(NodoReserva*& reservas)
     cout << endl << "Ingrese el ID de la reserva a anular: ";
     cin >> idReserva;
 
-    // Primera parte: Si la reserva a anular est� en la cabeza de la lista
+    // Primera parte: Si la reserva a anular esta en la cabeza de la lista
     if (reservas->reserva.idReserva == idReserva)
     {
         NodoReserva* temp = reservas;  // Creamos un nodo temporal
@@ -108,10 +110,18 @@ void anularReserva(NodoReserva*& reservas)
         actual->siguiente = actual->siguiente->siguiente;
         delete temp;
         cout << "Reserva con ID " << idReserva << " anulada." << endl;
+
+        cin.get();  // get e ignore para que no se cierre automaticamente
+        cin.ignore(); 
     }
+
+
     else
     {
-        cout << "Reserva con ID " << idReserva << " no encontrada en la lista." << endl;
+        cout << endl << "Reserva con ID " << idReserva << " no encontrada en la lista." << endl;
     }
-}
 
+    cin.get();  // get e ignore para que no se cierre automaticamente
+    cin.ignore();
+
+}

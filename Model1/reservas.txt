@@ -8,3 +8,43 @@ ID Reserva: 423423
 ID Cliente: 131243
 Fecha: 32423
 ----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 32123
+ID Cliente: 432432
+Fecha: 432423
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 32143
+ID Cliente: 32312
+Fecha: 232
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 321321
+ID Cliente: 32432
+Fecha: 2133
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 21342
+ID Cliente: 3432423
+Fecha: 231
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 312432
+ID Cliente: 4325423
+Fecha: 34243
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 32423
+ID Cliente: 4325432
+Fecha: 4342
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 321432
+ID Cliente: 321321
+Fecha: 43232
+----------------------------
+DATOS DE LA RESERVA:
+ID Reserva: 3432
+ID Cliente: 432432
+Fecha: 32432
+----------------------------

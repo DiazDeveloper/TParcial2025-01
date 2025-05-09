@@ -9,22 +9,24 @@ void registrarUsuarios(queue<Usuario>& usuarios)
 
     Usuario nuevoUsuario;
 
-    cout << "Ingrese el ID del usuario: "; 
-    cin >> nuevoUsuario.idUsuario; 
-    cin.ignore(); 
-    cout << "Ingrese el nombre del usuario: "; 
+    cout << "Ingrese el ID del usuario: ";
+    cin >> nuevoUsuario.idUsuario;
+    cin.ignore();
+    cout << "Ingrese el nombre del usuario: ";
     cin >> nuevoUsuario.nombre;
 
-    usuarios.push(nuevoUsuario); 
+    usuarios.push(nuevoUsuario);
 
     cout << "Usuario registrado exitosamente: " << nuevoUsuario.nombre << endl;
 
+    cin.get();   // get e ignore para que no se cierre automaticamente
+    cin.ignore();
 }
 
 void eliminarUsuario(queue<Usuario>& usuarios)
 {
 
-    if (usuarios.empty()) 
+    if (usuarios.empty())
     {
         cout << "No hay usuarios para eliminar." << endl;
         return;
@@ -38,9 +40,9 @@ void eliminarUsuario(queue<Usuario>& usuarios)
 
 }
 
-void mostrarUsuariosRecursiva(queue<Usuario>& copiaUsuarios) 
+void mostrarUsuariosRecursiva(queue<Usuario>& copiaUsuarios)
 {
-    // Caso base: si la copia de la cola está vacía, hemos terminado
+    // Caso base: si la copia de la cola esta vacia, hemos terminado
     if (copiaUsuarios.empty()) {
         return;
     }
@@ -48,7 +50,7 @@ void mostrarUsuariosRecursiva(queue<Usuario>& copiaUsuarios)
     // Obtener el primer usuario
     Usuario usuarioActual = copiaUsuarios.front();
 
-    // Mostrar la información del usuario
+    // Mostrar la informacion del usuario
     cout << "ID Usuario: " << usuarioActual.idUsuario << endl;
     cout << "Nombre Usuario: " << usuarioActual.nombre << endl;
     cout << "------------------" << endl;
@@ -60,7 +62,7 @@ void mostrarUsuariosRecursiva(queue<Usuario>& copiaUsuarios)
     mostrarUsuariosRecursiva(copiaUsuarios);
 }
 
-// Función para mostrar todos los usuarios (con recursividad)
+// Funcion para mostrar todos los usuarios (con recursividad)
 void mostrarUsuarios(queue<Usuario>& usuarios)
 {
     if (usuarios.empty()) {
@@ -73,14 +75,14 @@ void mostrarUsuarios(queue<Usuario>& usuarios)
     // Crear una copia de la cola para no modificar la original
     queue<Usuario> copiaUsuarios = usuarios;
 
-    // Llamamos a la función recursiva para mostrar los usuarios
+    // Llamamos a la funcion recursiva para mostrar los usuarios
     mostrarUsuariosRecursiva(copiaUsuarios);
 }
 
 
 void ordenarUsuarios(queue<Usuario>& usuarios)
 {
-    // Si la cola está vacía o tiene solo un elemento, no hace falta ordenar
+    // Si la cola esta vacia o tiene solo un elemento, no hace falta ordenar
     if (usuarios.empty() || usuarios.size() == 1) {
         return;
     }

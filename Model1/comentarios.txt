@@ -496,3 +496,29 @@ ID Usuario: 324325
 ID Pedido: 3423423
 Texto del Comentario: 42342543
 ----------------------------
+DATOS DEL COMENTARIO:
+ID Comentario: 423423
+ID Usuario: 432423
+ID Pedido: 43432
+Texto del Comentario: gaaa
+----------------------------
+DATOS DEL COMENTARIO:
+ID Comentario: 342423
+ID Usuario: 543543
+Texto del Comentario: fd
+----------------------------
+DATOS DEL COMENTARIO:
+ID Comentario: 323424
+ID Usuario: 324324
+Texto del Comentario: Bueno
+----------------------------
+DATOS DEL COMENTARIO:
+ID Comentario: 454354354
+ID Usuario: 543543534
+Texto del Comentario: Bueno
+----------------------------
+DATOS DEL COMENTARIO:
+ID Comentario: 1
+ID Usuario: 1
+Texto del Comentario: Regular
+----------------------------

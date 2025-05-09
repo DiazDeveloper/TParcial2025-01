@@ -11,12 +11,12 @@ void Controlador::mostrarMenu()
     cout << "6. Eliminar un comentario" << endl;
     cout << "7. Crear un usuario" << endl;
     cout << "8. Eliminar un usuario" << endl;
-    cout << "9. Mostrar usuarios" << endl; 
+    cout << "9. Mostrar usuarios" << endl;
     cout << "0. Salir" << endl;
     cout << "Seleccione una opcion: ";
 }
 
-void pausarPantalla() { 
+void pausarPantalla() {
     cout << "\nPresione ENTER para continuar...";
     cin.get();
 }
@@ -39,23 +39,23 @@ void Controlador::IniciarProyecto()
         {
         case 1:
             crearReserva(nodoR);
-            pausarPantalla(); 
+            pausarPantalla();
             break;
         case 2:
             anularReserva(nodoR);
-            pausarPantalla(); 
+            pausarPantalla();
             break;
         case 3:
             reporteReservas(nodoR);
-            pausarPantalla(); 
+            pausarPantalla();
             break;
         case 4:
             crearComentario(nodoC);
-            pausarPantalla();  
+            pausarPantalla();
             break;
         case 5:
             mostrarComentarios(nodoC);
-            pausarPantalla(); 
+            pausarPantalla();
             break;
         case 6:
             eliminarComentario(nodoC);
@@ -63,22 +63,22 @@ void Controlador::IniciarProyecto()
             break;
         case 7:
             registrarUsuarios(usuarios);
-            pausarPantalla();  
+            pausarPantalla();
             break;
         case 8:
             eliminarUsuario(usuarios);
-            pausarPantalla(); 
+            pausarPantalla();
             break;
         case 9:
             mostrarUsuarios(usuarios);
-            pausarPantalla();  
+            pausarPantalla();
             break;
         case 0:
-            cout << "Saliendo del programa." << endl;
+            cout << "Saliendo del programa..." << endl;
             break;
         default:
-            cout << "Opción no válida." << endl;
-            pausarPantalla();  
+            cout << "Opcion no valida" << endl;
+            pausarPantalla();
             break;
         }
 
